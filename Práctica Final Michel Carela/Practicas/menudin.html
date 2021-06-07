@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+    <meta charset="UTF-8"> 
+    <title>Construcción dinámica de menús</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="fontello.css">
+    </head> 
+
+<body> 
+    <div class="navegacion">
+        <nav>
+            <ul id="menu">
+                <li><a href="">Inicio <span class="icon icon-up-dir"></span></a></li>
+                <li><a href="">Nosotros <span class="icon icon-up-dir"></span></a></li>
+                <li>
+                    <a href="">Ofertas <span class="icon icon-up-dir"></span></a>
+                    <div class="submenu">
+                        
+                        <div class="submenu-items">
+                            <p>Submenu #1</p>
+                            <ul>
+                                <li><a href="#">Item #1</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="submenu-items">
+                            <p>Submenu #2</p>
+                            <ul>
+                                <li><a href="#">Item #1</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="submenu-items">
+                            <p>Submenu #3</p>
+                            <ul>
+                                <li><a href="#">Item #1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="texto">
+        <p>
+            Digite la opcion a generar
+        </p>
+        <input id="texto" type="text" size="25" maxlength="30" value="" name="nombre">
+    </div>
+
+    <div class="boton">
+        <input onclick="pasartexto()" type="button" value="CREAR">
+    </div>
+
+<script>
+
+function pasartexto() {
+
+    var tcampo;
+    tcampo = document.getElementById("texto").value;
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    var span = document.createElement("span");
+    
+    span.setAttribute('class', 'icon icon-up-dir');
+
+    a.setAttribute('href','#');
+
+    a.append(tcampo,span)
+    li.append(a)
+    document.getElementById("menu").append(li);
+}
+
+
+</script>
+
+
+</body> 
+</html> 

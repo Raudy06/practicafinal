@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(248, 247, 250);
+}
+
+.content {
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+}
+
+h1 {
+    color: black; padding: 30px; font-size: 30px;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.formulario {
+    padding-top: 40px;
+    width: 60%;
+    height: 450px;
+    
+}
+
+#generarCodigo {
+    width: 20%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#codigoQR {
+    width: 256px;
+    height: 256px;
+    margin-top: 25px;
+    background: white;
+}
+
+section {
+    display: flex;
+}
+
+.validacion p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(3, 3, 3)
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <title>Ejercicio Qr</title>
+    <link rel='stylesheet' href='style.css' type='text/css'>
+</head>
+<body>
+
+    <div class="content">
+        <header>
+            <h1>Genere su Qr aqui</h1>
+        </header>
+        <section>
+            <div class="formulario">
+                <input id="Nombres" type="text" placeholder="Nombres" >
+                <input id="Telefono" type="text" placeholder="Numero de telefono">
+                <input id="Celular" type="text" placeholder="Numero de Movil">
+                <input id="Correo" type="email" placeholder="Correo electronico">
+                <button id="generarCodigo">Generar</button>
+            </div>
+            <div id="codigoQR"></div>
+        </section>
+        <div class="validacion"></div>
+    </div>
+    <script src="queryjan.js"></script>
+    <script src="qrcode.js"></script>
+    <script src="proceso.js"></script>
+</body>
+
+</html>

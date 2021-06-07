@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #313D52;
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+}
+
+.navegacion ul{
+list-style: none;
+}
+
+.navegacion a:hover{
+    background: #bf57e7;
+    
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;   
+}
+
+.menu >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #CE7D35;
+    transition: all .3s;
+}
+
+.submenu{
+    margin: 0;
+    position: absolute;
+    background: #ffffff;
+    width: 600px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    letter-spacing: 0ch;
+}
+
+.submenu div{
+    display: block;
+    padding: 15px;
+    color: #6189ce;
+    font-family: sans-serif;
+    font:bolder;
+}
+
+.submenu li a{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    color: #0b0b0c;
+    font-family: sans-serif;
+    font-size: small; 
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu2{
+    margin: 0;
+    position:absolute;
+    background: #ffffff;
+    width: 600px;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 1.5s; 
+}
+.submenu2 div{
+    display: block;
+    padding: 15px;
+    color: #6189ce;
+    font-family: sans-serif;
+}
+.submenu2 li a{
+    display: block;
+    margin: 5px;
+    padding: 3px;
+    color: #0b0b0c;
+    font-family: sans-serif;
+    font-size: small;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu2{
+    visibility: visible;
+    opacity: 1;
+}
